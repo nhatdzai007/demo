@@ -1,0 +1,38 @@
+<div class="container text-center card bg-light col-md-6">
+   <form action="/book/add" method="post">
+      <h1 class="alert alert-warning text-uppercase">Add new book</h1>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Title</label>
+         <input class="form-control" type="text" placeholder="Enter book title" name="title" required minlength="5">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Genre</label>
+         <select class="form-control" name="genre">
+            <option value="Self-helf">Self-helf</option>
+            <option value="IT">IT</option>
+            <option value="Business">Business</option>
+            <option value="Life">Life</option>
+            <option value="Novel">Novel</option>
+         </select>
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Publisher</label>
+         <select class="form-control" name="publisher">
+            {{#each publishers }}
+               <option value="{{_id}}">{{ name }}</option>
+            {{/each}}
+         </select>
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Price</label>
+         <input class="form-control" type="number" name="price" placeholder="Enter book price">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Cover</label>
+         <input class="form-control" type="url" name="cover" placeholder="Enter book cover url" required>
+      </div>
+      <div class="form-group mt-3 mb-3">
+         <input class="btn btn-success" type="submit" value="Add">
+      </div>
+   </form>
+</div>

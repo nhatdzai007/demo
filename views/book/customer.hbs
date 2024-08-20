@@ -1,0 +1,16 @@
+<div class="text-center">
+   <h1 class="alert alert-danger mt-3 mb-5">BOOK LIST</h1>
+   <div class="row">
+      {{#each books }}
+      <div class="col-md-3 mt-3 mb-3">
+         <a href="/book/detail/{{_id}}">
+            <img class="card-img-top" src="{{ cover }}" width="100" height="400">
+         </a>
+         <div class="card-body">
+            <h2 class="card-title text-primary">{{ title }}</h2>
+            <button>Add to cart</button>
+         </div>
+      </div>
+      {{/each}}
+   </div>
+</div>

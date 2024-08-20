@@ -1,0 +1,21 @@
+<div class="container text-center card bg-light col-md-6">
+   <form action="/book/edit/{{ book._id }}" method="post">
+      <h1 class="alert alert-warning text-uppercase">Edit book</h1>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Title</label>
+         <input class="form-control" type="text" placeholder="Enter book title" name="title" required minlength="5" value="{{ book.title }}">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Price</label>
+         <input class="form-control" type="number" name="price" placeholder="Enter book price" value="{{ book.price }}">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Book Cover</label><br>
+         <img src="{{ book.cover }}" width="100" height="120"><br>
+         <input class="form-control" type="url" name="cover" placeholder="Enter book cover url" required value="{{ book.cover}}">
+      </div>
+      <div class="form-group mt-3 mb-3">
+         <input class="btn btn-success" type="submit" value="Edit">
+      </div>
+   </form>
+</div>

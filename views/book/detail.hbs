@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book Detail</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col">
+            <img src="{{ book.cover }}" width="400" height="450">
+         </div>
+         <div class="col">
+            <h1 class="text text-danger">Book Detail</h1>
+            <h3>Genre: {{ book.genre }}</h3>
+            <h3>Title: {{ book.title }}</h3>
+            <h3>Price: ${{ book.price }}</h3>
+            <h3>Publisher: {{ book.publisher.name }}</h3>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

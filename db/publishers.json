@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f4ff"
+  },
+  "name": "Penguin Random House"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f500"
+  },
+  "name": "Harper Collins"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f501"
+  },
+  "name": "Simon and Schuster"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f502"
+  },
+  "name": "Macmillan Publishers"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f503"
+  },
+  "name": "Hachette Book Group"
+}]
